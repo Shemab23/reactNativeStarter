@@ -4,12 +4,14 @@
   "version": "1.0.0",
   "dependencies": {
     "@expo/ui": "~57.0.21",
+    "@tanstack/react-query": "5.104.0",
     "expo": "~57.0.26",
     "expo-constants": "~57.0.20",
     "expo-device": "~57.0.2",
     "expo-font": "~57.0.4",
     "expo-glass-effect": "~57.0.4",
     "expo-image": "~57.0.5",
+    "expo-linear-gradient": "~57.0.2",
     "expo-linking": "~57.0.11",
     "expo-router": "~57.0.24",
     "expo-splash-screen": "~57.0.9",
@@ -17,6 +19,8 @@
     "expo-symbols": "~57.0.3",
     "expo-system-ui": "~57.0.4",
     "expo-web-browser": "~57.0.3",
+    "lucide-react-native": "1.48.0",
+    "nativewind": "4.2.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-native": "0.86.3",
@@ -29,6 +33,9 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~57.0.2",
+    "tailwindcss": "3.4.17",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -37,7 +44,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "typescheck": "tsc --noEmit"
   },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=22 <23"
+  }
 }
